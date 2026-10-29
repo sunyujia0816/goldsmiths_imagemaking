@@ -2,16 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <!-- 界面风格修改的地方放在这里，不要放在body里面，保证里面正文内容-->
+    <title>home</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            background: #faa5a5;
+            color: #00448e;
+        }
+        /* margin是边框，padding是元素之间的间距，background是背景颜
+        色，color是字体颜色，同时在这里的注释不一样因为这里是css，在左边
+        点击色块可以很方便的修改颜色... */
+        p {
+            margin: 10px;
+            padding: 15px;
+            background: #b6f4f4;
+        }
+        /*关联到下面的<p>所以这里是p*/
+
+    </style>
 </head>
 <body>
     <p>Hello World</p>
-    <img src="images/week04.jpg" alt="meme" width = "100" height = "120">
-<!--    修饰图片大小 只用width的话只是规定宽度，高度他会自己调整不会拉伸，还不错-->
-    <video width="320" height="240" controls="true">
+    <img src="images/week04.jpg" alt="meme" width = "200" height = "240">
+    <!--  修饰图片大小 只用width的话只是规定宽度，高度他会自己调整不会拉伸，还不错-->
+
+    <video width="320" height="200" controls="true" loop autoplay>
         <source src="videos/week04.mp4" type="video/mp4">
     </video>
     <!--  control在这里的意思是播放器的意思大概，反正就是可以灵活的改变在
-    这里插入的视频-->
+    这里插入的视频-- loop是自动重播>
+
 </body>
 </html>
