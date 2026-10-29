@@ -20,12 +20,29 @@
             padding: 15px;
             background: #b6f4f4;
         }
-        /*关联到下面的<p>所以这里是p*/
+        /*关联到下面的<p>所以这里是p，但是这里的p同时对所有的段落起作用
+        .TOP 表示类别，#first表示id，尽量用这样的办法让网页变得整洁*/
+
+        .top{
+            width: 120%;
+            background: #ffe27b
+        }
+
+        #first{
+            background: #2e9bff
+        }
 
     </style>
 </head>
 <body>
-    <p>Hello World</p>
+    <p class="top" id="first" >Hello World</p>
+<!--  使用这种办法来区分不同段落，class里面可以有很多，
+      id让class里面的每一段都独一无二-->
+    <p class="top" > Hello World </p>
+
+    <p>Goodbye World</p>
+    <p>Goodbye World</p>
+
     <img src="images/week04.jpg" alt="meme" width = "200" height = "240">
     <!--  修饰图片大小 只用width的话只是规定宽度，高度他会自己调整不会拉伸，还不错-->
 
