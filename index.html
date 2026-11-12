@@ -5,45 +5,21 @@
     <!-- 界面风格修改的地方放在这里，不要放在body里面，保证里面正文内容-->
     <title>home</title>
 
+    <link rel="stylesheet" href="main.css">
+    <!-- 连接到style sheet，-->
     <style>
-        body {
-            margin: 0;
-            padding: 10px;
-            background: #faa5a5;
-            color: #00448e;
-        }
-        /* margin是边框，padding是元素之间的间距，background是背景颜
-        色，color是字体颜色，同时在这里的注释不一样因为这里是css，在左边
-        点击色块可以很方便的修改颜色... */
-        p {
-            margin: 10px;
-            padding: 15px;
-            background: #b6f4f4;
-        }
-        /*关联到下面的<p>所以这里是p，但是这里的p同时对所有的段落起作用
-        .TOP 表示类别，#first表示individuals，同时这三个类别是母子关系，
-        大类别的变化会改变小的尽量用这样的办法让网页变得整洁*/
-
-        .top{
-            width: 120%;
-            background-color: #ffe27b
-        }
-
-        #first{
-            background: #2e9bff
-            font-family : Arial Helvetica sans-serif;
-        }
-        p #first{
-            margin: 10px;
-            padding: 15px;
-            background: #b6f4f4;
-        }
-        /* 在这里p#first可以特别用来指出p段落下的#first标签哪点内容 */
-        img{
-            margin: 10px;
-        }
-
+        /* 在这里写颜色的话，就会把前面link到的main style sheet里面的内容覆盖掉 ... */
     </style>
+
+    <script>
+        /*
+        就像style一样，在这里写的东西也可以放到一个文件夹里然后，放到上面的src
+        这里写的是弹窗内容
+        ... */
+
+    </script>
+
+
 </head>
 <body>
     <p class="top" id="first" >Hello World</p>
@@ -55,17 +31,35 @@
     <p>Goodbye World</p>
 
     <img src="images/week04.jpg" alt="meme" width = "200" height = "240">
+    <img width = "150" src="images/week04.jpg" alt="">
     <!--  修饰图片大小 只用width的话只是规定宽度，高度他会自己调整不会拉伸，还不错-->
 
-    <video width="320" height="200" controls="true" loop autoplay>
+    <video width="320" height="200" controls loop autoplay>
         <source src="videos/week04.mp4" type="video/mp4">
     </video>
     <!--  control在这里的意思是播放器的意思大概，反正就是可以灵活的改变在
     这里插入的视频-- loop是自动重播-->
 
     <p class="top" >
-    <a href="second-page.html">this is a search engine</a>
-    <!--  anchor锚点缩写为a，href在属性的位置插入超链接-->
+
+        <a href="second-page.html">
+        this is a second page
+          <img width = "150" src="images/week04.jpg" alt="">
+        </a>
+
+        <img width = "150" src="https://buybc.gov.bc.ca/app/uploads/sites/386/2024/03/Tomatoes_190495029.png" alt="??">
+        <video width="320" height="200" controls loop autoplay>
+            <source src="videos/week04.mp4" type="video/mp4">
+        </video>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-_sUzeqJmvI?si=WLq3XOVylLC6S5tU" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    <!--  anchor锚点缩写为a，href在属性的位置插入超链接--,前面的链接是真实去向的网站，
+    后面写的是按钮的名字，同时呢这里的显示物还能是图片，之所以<video> 标签在这里再次出现，只是说明video可以使用链接，但是
+    只支持直接指向 .mp4、.webm 等视频文件的直链，而 YouTube 链接指向的是网页，所以无论怎么改后缀，
+    <video> 标签都无法播放-->
+
     </p>
 
 </body>

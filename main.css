@@ -1,0 +1,38 @@
+/*把在之前的index里面的<style>里面的全部东西复制了过来，像这样的样式文件，方便从任何别的地方移植他的风格，
+ 只需要找到对应网站的style sheet*/
+body {
+    margin: 0;
+    padding: 10px;
+    background: #faa5a5;
+    color: #00448e;
+}
+/* margin是边框，padding是元素之间的间距，background是背景颜
+色，color是字体颜色，同时在这里的注释不一样因为这里是css，在左边
+点击色块可以很方便的修改颜色... */
+p {
+    margin: 10px;
+    padding: 15px;
+    background: #b6f4f4;
+}
+/*关联到下面的<p>所以这里是p，但是这里的p同时对所有的段落起作用
+.TOP 表示类别，#first表示individuals，同时这三个类别是母子关系，
+大类别的变化会改变小的尽量用这样的办法让网页变得整洁*/
+
+.top{
+    width: 120%;
+    background-color: #ffe27b
+}
+
+#first{
+    background: #123d65;
+    font-family : Arial Helvetica sans-serif;
+}
+p #first{
+    margin: 10px;
+    padding: 15px;
+    background: #b6f4f4;
+}
+/* 在这里p#first可以特别用来指出p段落下的#first标签哪点内容 */
+img{
+    margin: 10px;
+}
