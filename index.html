@@ -9,21 +9,38 @@
     <!-- 连接到style sheet，-->
     <style>
         /* 在这里写颜色的话，就会把前面link到的main style sheet里面的内容覆盖掉 ... */
+        body {
+            background: #ffe27b;
+        }
     </style>
 
     <script>
+        /*就像style一样，在这里写的东西也可以放到一个文件夹里然后，放到上面的src
+        这里写的是弹窗内容 script是脚本的意识... */
+        alert("OuO");
         /*
-        就像style一样，在这里写的东西也可以放到一个文件夹里然后，放到上面的src
-        这里写的是弹窗内容
+        这里蓝色tag就像茶杯一样，在里面写的东西就被装了起来，可以迁移到其他地方（好像是）
         ... */
+        console.log("hello world");
+        /*
+        console 控制台，浏览器更多工具，开发者工具打开，左边是代码，右边是css，下面是控制台，console的东西就在里面
+        ... */
+        //comment，注释其实这样也是对的
 
+        var benugo = 'coffee'; //这里本质上是在定义变量
+        var age = 22;
+        var length = 100.5;
+
+        alert(benugo);
+        alert(age);
+        alert(length);//在这里括号中间的词就不再是单独的词汇而是变量名字
     </script>
 
 
 </head>
 <body>
     <p class="top" id="first" >Hello World</p>
-<!--  使用这种办法来区分不同段落，class里面可以有很多，
+    <!--  使用这种办法来区分不同段落，class里面可以有很多，
       id让class里面的每一段都独一无二-->
     <p class="top" > Hello World </p>
 
@@ -44,7 +61,7 @@
 
         <a href="second-page.html">
         this is a second page
-          <img width = "150" src="images/week04.jpg" alt="">
+            <img width = "150" src="images/week04.jpg" alt="">
         </a>
 
         <img width = "150" src="https://buybc.gov.bc.ca/app/uploads/sites/386/2024/03/Tomatoes_190495029.png" alt="??">
